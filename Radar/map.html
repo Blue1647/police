@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="shortcut icon" href="https://lh5.googleusercontent.com/-qkurFmzauHs/VxNONNAaldI/AAAAAAAABus/-KTmv90EFu0D2szrFEl-XqrfsyQddCG0wCL0B/w402-h320-no/my_logo.png" />
+  <title>Radar</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <!--Navbar-->
+  <div class="navbar-fixed">
+    <nav class="black" role="navigation">
+    <div class="nav-wrapper container">
+      <img src="https://lh5.googleusercontent.com/-qkurFmzauHs/VxNONNAaldI/AAAAAAAABus/-KTmv90EFu0D2szrFEl-XqrfsyQddCG0wCL0B/w402-h320-no/my_logo.png" margin-top=10 width=60 height=60 >
+      <a id="logo-container" href="#" class="brand-logo">Radar</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="feed.html">Local</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="radar.html">Home</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="feed.html">Local</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="radar.html">Home</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Radar</h5>
+          <p class="grey-text text-lighten-4">This page shows any reviews and reports in your area that have been given by fellow citizens. This can give you a sense of how the community is doing.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="white-text" href="#!"></a></li>
+            <li><a class="white-text" href="#!"></a></li>
+            <li><a class="white-text" href="#!"></a></li>
+            <li><a class="white-text" href="#!"></a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <img src="https://lh3.googleusercontent.com/ZZPdzvlpK9r_Df9C3M7j1rNRi7hhHRvPhlklJ3lfi5jk86Jd1s0Y5wcQ1QgbVaAP5Q=w300" width=10 heigth=10 >
+            <li><a class="white-text" href="#!">Facebook</a></li>
+            <img src="https://pbs.twimg.com/profile_images/674026885580386304/a3rxT9ck.jpg" width=10 heigth=10 >
+            <li><a class="white-text" href="#!">Instagram</a></li>
+            <img src="https://pbs.twimg.com/profile_images/638750728354430976/HnTYCHzN_400x400.png" width=10 heigth=10 >
+            <li><a class="white-text" href="#!">Google</a></li>
+            <img src="https://pbs.twimg.com/profile_images/666407537084796928/YBGgi9BO.png" width=10 heigth=10 >
+            <li><a class="white-text" href="#!">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:700px;width:1350px;'><div id='gmap_canvas' style='height:700px;width:1350px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://www.autohuren.world/">auto huren</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(32.715738,-117.16108380000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(32.715738,-117.16108380000003)});infowindow = new google.maps.InfoWindow({content:'<strong>You are Here</strong><br>San Diego, California<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+  <div id="googleMap" style="width:500px;height:380px;"></div>
+
+<div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Blue 1647 &copy2016</a>
+      </div>
+
+  </body>
+</html>
+
